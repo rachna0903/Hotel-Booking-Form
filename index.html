@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="shortcut icon" href="icon.png" type="icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="page">
+        <div>
+            <img src="hotel.jpg" alt="hotel pic">
+        </div>
+        <h1> <strong> Hotel Booking Form</strong></h1>
+        <form class="booking-form">
+            <div>
+                <label for="fname"><strong>FIRST NAME </strong></label>
+                <input type="text" placeholder="Enter your first name" id="fname" required /><br><br>
+            </div>
+            <div>
+                <label for="lname"><strong>LAST NAME</strong></label>
+                <input type="text" placeholder="Enter your last name" id="lname" required /><br><br>
+            </div>
+            <div>
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" placeholder="Enter your email address" id="email" required /><br><br>
+            </div>
+            <div>
+                <label for="PNo"><strong>PHONE NUMBER</strong></label>
+                <input type="PNo" placeholder="Enter your phone number " id="PNo" required /><br><br>
+            </div>
+
+            <div>
+                <label for="check-in"><strong>CHECK-IN DATE</strong></label>
+                <input type="DATE" placeholder="select check-in date" id="check-in" required /> <br><br>
+            </div>
+
+            <div>
+                <label for="check-out"><strong>CHECK-OUT DATE</strong></label>
+                <input type="DATE" placeholder="select check-out date" id="check-out" required /> <br><br>
+            </div>
+
+            <div>
+                <label for="number"><strong>NUMBER OF GUESTS</strong></label>
+                <input type="number" placeholder="Enter total numbers of guests" id="number" required /><br><br>
+            </div>
+
+            <div>
+                <label for="type"><strong>ROOM TYPE</strong></label>
+                <!-- <input type="" placeholder="Select your prefeered room type" id="type" required>  -->
+                <select>
+                    <option>Single room</option>
+                    <option>Studio</option>
+                    <option>Presidential Suite</option>
+                    <option>Cabana</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="selection"><strong>AMENITIES</strong></label>
+                <p>Select amenities you would like to have in your room</p>
+                <input type="checkbox" id="wifi" name="wifi" value="wifi" />
+                <label for="wifi">Wifi</label>
+                <input type="checkbox" id="Free Breakfast" name="Free Breakfast" value="Free Breakfast" />
+                <label for="Free Breakfast"> Free Breakfast</label>
+                <input type="checkbox" id="Gym Access" name="Gym Access" value="Gym Access" />
+                <label for="Gym Access"> Gym Access</label>
+                <input type="checkbox" id="Pool Access" name="Pool Access" value="Pool Access" />
+                <label for="Pool Access"> Pool Access </label>
+            </div>
+            <div class="requists">
+                <label for="requists"><strong>SPECIAL REQUISTS</strong></label>
+                <input type="text" maxlength="1000" placeholder="Enter any special requists or comments"
+                    id="requists" /> <br><br>
+            </div>
+            <div>
+                
+                    <input type="checkbox" id="agree" name="agree"  />
+                    <label for="agree">I agree to the terms and conditions.</label>
+               
+            </div>
+
+            <button tpe="Submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
